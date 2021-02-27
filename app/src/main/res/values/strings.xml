@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">AllenCarr</string>
+    <color name="loginButton_background_color">#000</color>
+    <color name="loginButton_text_color">#FFF</color>
+    <color name="appbar_color">#000</color>
+    <color name="appbar_text_color">#FFFF</color>
+    <color name="background_color">#FFFF</color>
+    <color name="text_color">#000</color>
+    <color name="subscribe_background_color">#FF0000</color>
+    <color name="subscribe_text_color">#FF0000</color>
+    <color name="bottom_background_color">#000</color>
+    <color name="bottom_text_color">#FFF</color>
+    <string name="youtubeApi_key">AIzaSyA-Ix2Kw2crPGI1w1XNZ32HyEDMplNhHyU</string>
+    <string name="channelID">"UCWuMNQbxpltFjwvghbPfygg";</string>
+
+    <string name="title_activity_more_view">MoreView</string>
+
+    <string name = "admob_app_id">ca-app-pub-6562154197787185~2108211836</string>
+    <string name = "banner_ad_unit_id_for_test">ca-app-pub-3940256099942544/6300978111</string>
+    <string name = "banner_ad_unit_id_for_release">ca-app-pub-6562154197787185/6190641665</string>
+
+    <string name = "ad">ca-app-pub-6562154197787185~2108211836</string>
+    <string name="myPresent">https://blog.naver.com/squart300kg/222256652256</string>
+    <string name="myReviewURL">https://blog.naver.com/squart300kg/222254077541</string>
+    <string name="allencarURL">https://www.allencarr.co.kr/</string>
+    <string name="naverURL">https://cafe.naver.com/allencarr?fbclid=IwAR1iNhLQEeTX2sMw2wS2eWhrpkoZP2lTkjNfxG2MbFrn37AF34CsKpNvx7Y</string>
+    <string name="facebookURL">https://www.facebook.com/easywayseoul/?__tn__=kC-R&amp;eid=ARCG37wTU4lFGl-VURWmCG-S9P9Z_GWTNbisGj7CuPWXlEKstofnvSlmQzAFmTR_Roo0-fkNHRjZv7hR&amp;hc_ref=ARQ8vuFrcM_AV_DDL2xWcNps4yfIePMzNyvmD_-9u_gY9rr2Fc5KUIyGHMxqjXmp-Ws&amp;fref=nf&amp;__xts__[0]=68.ARCNxgILTAAIsCdIrTTyJqZJJ1hQ-iji8WGvcNJ7tNGpXYS2X_6nUvedY6yio6GejeZshajNuhv8KRQ2tinHtmsoOj7za2TIOUJHF18ZT2d9yoSrl05zQY1O0PlgaZ2V7XmtEiKgc7bd9M0sRQvfuJF2Vei8ICT4bTC-iRJzhn1HZ4mIMqq0ULsOf3wUdkFc_QgiupTAsj0aKBi4TZ3cv6i6SZ4GPhXgZaF-qHP7vBTG7IeQeTBRVqqmWlYCxsjaE5sk788rpjpR_PrE4wZJHe6n6UIc3ZQBemvD1kwmr8Elr3uC8xT3rYFdamzRx5HvkA9xoT0jOz4N5zQoL32GBdM-DFBH</string>
+    <string name="return_videoURL">https://vimeo.com/154122431</string>
+    <string name="applicationID">5e0c9b5502f57e00289c4286</string>
+    <string name="kakao_openChatting_url">https://open.kakao.com/o/gaAXTDV</string>
+    <string name="kakao_app_key"> b883f6311629754c989c2bc726325637</string>
+    <string name="kakao_scheme">kakaob883f6311629754c989c2bc726325637</string>
+    <string name="kakaolink_host">kakaolink</string>
+    <string name="templateID">20044</string>
+    <string name="title_activity_main_drawer">Allencar</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_second_drawer">SecondDrawerActivity</string>
+</resources>

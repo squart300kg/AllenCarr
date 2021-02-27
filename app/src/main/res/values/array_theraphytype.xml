@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="my_array">
+        <item>&lt;테라피 선택&gt;</item>
+        <item>&lt;1차 테라피&gt;</item>
+        <item>&lt;2차 테라피&gt;</item>
+        <item>&lt;3차 테라피&gt;</item>
+    </string-array>
+</resources>

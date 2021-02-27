@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_question"
+            android:title=" ● 알렌카 자주 묻는 질문" />
+    </group>
+
+    <item android:title="알렌카에 대해 더 많은 정보를 원한다면?">
+        <menu>
+            <item
+                android:id="@+id/nav_youtube"
+                android:title=" ● 알렌카 유튜브" />
+            <item
+                android:id="@+id/nav_naverCafe"
+                android:title=" ● 알렌카 네이버 카페" />
+            <item
+                android:id="@+id/nav_facebook"
+                android:title=" ● 알렌카 페이스북" />
+            <item
+                android:id="@+id/nav_kakao_openChattingRoom"
+                android:title=" ● 알렌카 카카오톡 채팅방" />
+        </menu>
+    </item>
+
+    <item android:title="흡연 경력 6년차 개발자가 하고싶은 말">
+        <menu>
+            <item
+                android:id="@+id/present"
+                android:title=" ● 테라피 신청자 분들께 드리는 선물" />
+        </menu>
+    </item>
+
+
+
+</menu>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="my_array_pay_selector">
+        <item>휴대폰 결제</item>
+        <item>카카오 페이</item>
+        <item>무통장 입금</item>
+        <item>신용카드 결제</item>
+    </string-array>
+</resources>
