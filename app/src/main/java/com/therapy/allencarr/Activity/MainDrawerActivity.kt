@@ -73,7 +73,7 @@ class MainDrawerActivity : YouTubeBaseActivity(), YouTubePlayer.OnInitializedLis
         //TODO :: 유튜브 영상 더보기
 //        moreView_youTube.setOnClickListener(this)
         //TODO :: 알렌카 후기 영상 초기화
-        init_reviewList()
+//        init_reviewList()
         //TODO :: 알렌카 자세히 보기 클릭
         moreView_allenCarr.setOnClickListener(this)
         //TODO :: 알렌카 환불 보증제도 보기 클릭
@@ -88,9 +88,9 @@ class MainDrawerActivity : YouTubeBaseActivity(), YouTubePlayer.OnInitializedLis
         Log.i(TAG + " email : ", email)
 
 
-
         //TODO :: 테라피 후기 리스트를 위한 리사이클러뷰 초기화
-        val adapterMain = AdapterMain(this, review_list)
+        Log.i(TAG, "adapterMain들어가기 직전")
+        val adapterMain = AdapterMain(this)
         {
                 dtoReview -> startActivity(YouTubeIntents.createPlayVideoIntentWithOptions(this, dtoReview.videoID, true, false))
         }
@@ -118,52 +118,7 @@ class MainDrawerActivity : YouTubeBaseActivity(), YouTubePlayer.OnInitializedLis
     ) {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
-    fun init_reviewList(){
-        val dtoReview0 = DTOReview("메인페이지", "https://i.ytimg.com/vi/iwqvsDI6LMs/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAbReugNxXJL1lKP01ab7mG4qNXSA", "iwqvsDI6LMs")
 
-        val dtoMainReview = DTOReview("mainReview","mainReview","mainReview")
-
-        val dtoReview1 = DTOReview("하루 3갑 16년 흡연 경력 이동훈님 후기", "https://i.ytimg.com/vi/iwqvsDI6LMs/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAbReugNxXJL1lKP01ab7mG4qNXSA", "iwqvsDI6LMs")
-        val dtoReview2 = DTOReview("하루 3갑 25년 흡연 경력 김호준님 후기", "https://i.ytimg.com/vi/C0LL7UXgizs/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAT9df35RP9HPNjY0iGwOzlUq4acw", "C0LL7UXgizs")
-        val dtoReview8 = DTOReview("하루 2갑 22년 흡연 경력 박광수님 후기", "https://i.ytimg.com/vi/uN8tk8DLOis/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBJrT02Oi_i2prj9xhZzDS1nkTCQA", "uN8tk8DLOis")
-        val dtoReview11 = DTOReview("하루 2갑 20년 흡연 경력 김동섭님 후기", "https://i.ytimg.com/vi/ahxvwoO88pM/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBoQ-g3ITm60RwfHXRhbma3jLj1IQ", "ahxvwoO88pM")
-
-        val adRView = DTOReview("ad", "ad", "ad")
-
-        val dtoReview13 = DTOReview("하루 2갑 22년 흡연 경력 이동채님 후기", "https://i.ytimg.com/vi/qk4XAob-GPc/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLB8_ESpgEQMDVyLHVTrbbz3Ot4vfg", "qk4XAob-GPc")
-        val dtoReview3 = DTOReview("45년 흡연 경력 김준성님 후기", "https://i.ytimg.com/vi/sQoqnYFz6yo/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCBBOvSG7drlxM8-taIpHppeRYJjQ", "sQoqnYFz6yo")
-        val dtoReview4 = DTOReview("하루 1갑 26년 흡연 경력 김태수님 후기", "https://i.ytimg.com/vi/rQrEuKemHJk/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLArvwuhIxg3hAvIp_tegpmDNjv-sQ", "rQrEuKemHJk")
-        val dtoReview5 = DTOReview("23년 흡연 경력 김지성님 후기", "https://i.ytimg.com/vi/EVW0jk05lbA/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLDV0CuI_0Eu4BW3m9n9Xu5AGzImzw", "EVW0jk05lbA")
-        val dtoReview6 = DTOReview("임준식님, 알렌카의 금연테라피 후기", "https://i.ytimg.com/vi/Gn5BjL7Rtdo/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCciF0EEo3z3y8BI2DIGzU8wUHMRQ", "Gn5BjL7Rtdo")
-        val dtoReview7 = DTOReview("하루 1갑 30년 흡연 경력 변정윤님 후기", "https://i.ytimg.com/vi/owgoXDsJ4_U/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBdyHoTQdZkp5fLS1iqECGa93s13g", "owgoXDsJ4_U")
-        val dtoReview9 = DTOReview("30년 흡연 경력 이상용님 후기", "https://i.ytimg.com/vi/CABwb-0M8Zc/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBcVmo9f4WyniDqDuoTQs4flFW_bQ", "CABwb-0M8Zc")
-        val dtoReview10 = DTOReview("21년 흡연 경력 박지훈님 후기", "https://i.ytimg.com/vi/WucrK7fq8HE/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLBi-Z_YObJw8XOrxbO3xWR3mAlWMw", "WucrK7fq8HE")
-        val dtoReview12 = DTOReview("흡연 경력 30년 김은선님 후기", "https://i.ytimg.com/vi/vTRgtAOjsIs/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLCfgB7LfAk26fqR8djFgWZYxSagTA", "vTRgtAOjsIs")
-        val dtoReview14 = DTOReview("하루 1.5갑 15년 흡연 경력 김고은님 후기", "https://i.ytimg.com/vi/TzxAZL-juv8/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLAcTNPuEseoZiVHSVOg8wRdzu8uyw", "TzxAZL-juv8")
-
-
-
-//        review_list.add(dtoReview0)
-        review_list.add(dtoMainReview)
-
-        review_list.add(dtoReview1)
-        review_list.add(dtoReview2)
-        review_list.add(dtoReview8)
-        review_list.add(dtoReview11)
-
-        review_list.add(adRView)
-
-        review_list.add(dtoReview13)
-        review_list.add(dtoReview3)
-        review_list.add(dtoReview4)
-        review_list.add(dtoReview5)
-        review_list.add(dtoReview7)
-        review_list.add(dtoReview9)
-        review_list.add(dtoReview10)
-
-        review_list.add(dtoReview12)
-        review_list.add(dtoReview14)
-    }
     override fun onClick(p0: View?)
     {
 
@@ -174,10 +129,7 @@ class MainDrawerActivity : YouTubeBaseActivity(), YouTubePlayer.OnInitializedLis
                 intent.putExtra("type", "myReview")
                 startActivity(intent)
         }
-            //TODO :: 알렌카 유튜브 페이지로 이동
-//            moreView_youTube ->
-//                startActivity(YouTubeIntents.createChannelIntent(this, getString(com.example.allencarr.R.string.channelID)))
-//                startActivity(Intent(this@MainActivity, CoordinateActivity::class.java))
+
             //TODO :: 알렌카 예약하기 클릭
             moreView_allenCarr ->
             {
@@ -186,14 +138,7 @@ class MainDrawerActivity : YouTubeBaseActivity(), YouTubePlayer.OnInitializedLis
                 intent.putExtra("type", "moreView")
                 startActivity(intent)
             }
-            //TODO :: 알렌카 환불 보증제도 자세히 보기 클릭
-//            return_system1 ->
-//            {
-//                intent = Intent(this, MoreView2::class.java)
-//                intent.putExtra("type", "return_system")
-//                startActivity(intent)
-//                //https://vimeo.com/154122431
-//            }
+
         }
     }
     override fun onNavigationItemSelected(item: MenuItem): Boolean
@@ -264,4 +209,5 @@ class MainDrawerActivity : YouTubeBaseActivity(), YouTubePlayer.OnInitializedLis
 //        val navController = findNavController(R.id.nav_host_fragment)
 //        return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
 //    }
+
 }
